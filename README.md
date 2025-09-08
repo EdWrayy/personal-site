@@ -7,5 +7,4 @@ This is the source code for my personal website [edjwray.com](https://edjwray.co
 - 🌙 Dark mode with theme toggle
 - 📱 Fully responsive layout
 - 🧩 Sections for About, Experience, Projects, and Contact
-- 🚀 Hosted with GitHub Pages
-
+- 🚀 Hosted on my own VPS using nginx
