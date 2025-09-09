@@ -6,9 +6,9 @@
   <title>Edward Wray – Systems & Distributed Engineering</title>
 
   <!-- SEO / Social -->
-  <meta name="description" content="Edward Wray – Computer Science student focused on distributed systems, high-performance infrastructure, and low-level programming." />
+  <meta name="description" content="Edward Wray – Computer Science student interested in distributed systems, infrastructure, and low-level programming." />
   <meta property="og:title" content="Edward Wray – Systems & Distributed Engineering" />
-  <meta property="og:description" content="Projects from bare-metal microcontrollers to distributed file systems." />
+  <meta property="og:description" content="Projects exploring everything from microcontrollers to distributed file systems." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://edjwray.com" />
   <meta name="color-scheme" content="light dark" />
@@ -21,9 +21,9 @@
     <header>
       <div>
         <h1 class="title">Edward Wray</h1>
-        <p class="subtitle">CS @ University of Southampton. I build <strong>distributed systems</strong>, high-performance data pipelines, and <strong>low-level</strong> software — from bare-metal microcontrollers to scalable services.</p>
+        <p class="subtitle">CS @ University of Southampton. Interested in how software scales - from low-level embedded systems up to distributed infrastructure. I enjoy exploring how different layers of technology fit together, and building projects that push my understanding across them.</p>
         <div class="chiprow">
-          <span class="chip">Go</span><span class="chip">Java</span><span class="chip">C/C++</span><span class="chip">Haskell</span><span class="chip">Linux</span><span class="chip">Distributed Systems</span><span class="chip">Concurrency</span><span class="chip">Probability & Statistics</span>
+          <span class="chip">Go</span><span class="chip">Java</span><span class="chip">C/C++</span><span class="chip">Haskell</span><span class="chip">Linux</span><span class="chip">Distributed Systems</span><span class="chip">Concurrency</span><span class="chip">Machine Learning</span><span class="chip">Networking</span>
         </div>
       </div>
       <div class="actions">
@@ -37,8 +37,8 @@
     <section aria-labelledby="about">
       <h2 id="about">About</h2>
       <div class="card">
-        <p><strong>Interests:</strong> Large-scale infrastructure (cloud, P2P, web), extracting insight from large datasets, and using ML where it actually adds value.</p>
-        <p class="muted">Currently focused on correctness, performance, and clarity in code — plus the engineering discipline to ship reliably.</p>
+        <p><strong>Interests:</strong> Systems programming, distributed and cloud infrastructure, networking, and embedded development.</p>
+        <p class="muted">I’m motivated by curiosity and like working on projects that stretch across abstraction layers - from hardware-close code to scalable software — while learning new approaches along the way.</p>
       </div>
     </section>
 
@@ -49,9 +49,10 @@
           <h3>Software Engineer Intern – FactSet</h3>
           <div class="meta">London • Jun–Sep 2025</div>
           <ul class="clean">
-            <li>Built robust distributed data pipelines in Go; emphasised throughput and resilience.</li>
-            <li>Automated debugging tooling that cut diagnosis time from days to minutes.</li>
-            <li>Peer-reviewed code with focus on performance and correctness.</li>
+            <li>Worked on distributed data pipelines in Go, with an emphasis on throughput and resilience.</li>
+            <li>Created automated debugging tooling that helped reduce diagnosis time significantly.</li>
+            <li>Improved performance of database queries through optimisation in SQL.</li>
+            <li>Contributed to code reviews with a focus on performance and correctness.</li>
           </ul>
           <div class="tagrow">
             <span class="tag">Go</span><span class="tag">Distributed Systems</span><span class="tag">Observability</span>
@@ -62,10 +63,9 @@
           <div class="meta">Didcot • Jun–Jul 2022</div>
           <ul class="clean">
             <li>Programmed PLCs in ladder logic for safety-critical equipment.</li>
-            <li>Hands-on real-time control and hardware/software integration.</li>
           </ul>
           <div class="tagrow">
-            <span class="tag">PLC</span><span class="tag">Real-time</span><span class="tag">Controls</span>
+            <span class="tag">PLC</span><span class="tag">Real-time</span><span class="tag">Control Systems</span>
           </div>
         </div>
       </div>
@@ -77,21 +77,21 @@
         <article class="card">
           <h3><a href="https://github.com/EdWrayy/DistributedFileSystem" target="_blank" rel="noreferrer">Distributed File System</a></h3>
           <div class="meta">Java • Replication • Rebalancing • Fault tolerance</div>
-          <p>Multi-threaded storage with a controller that handles replication, load-balancing, failures, and concurrent clients. Hit 99.99% simulated availability under failure.</p>
+          <p>Implemented a storage system with a controller that manages replication, rebalancing, failures, and multiple clients. Explored concurrency and reliability trade-offs while designing the custom protocol over TCP sockets.</p>
           <div class="tagrow"><span class="tag">Java</span><span class="tag">TCP</span><span class="tag">Concurrency</span></div>
         </article>
 
         <article class="card">
           <h3><a href="https://github.com/EdWrayy/Pico-W-Flashcard-Display" target="_blank" rel="noreferrer">Bare-Metal HTTPS Flashcards</a></h3>
           <div class="meta">C • RP2040 • TLS • SPI OLED</div>
-          <p>Implemented TLS handshake + cert validation and streamed data to an OLED on a microcontroller with strict memory limits.</p>
+          <p>Built an HTTPS client on a microcontroller using lwIP and mbedTLS, handling Wi-Fi, DNS, and TLS. Connected to a GitHub Pages backend and displayed data on an SPI OLED, working within tight memory/CPU constraints.</p>
           <div class="tagrow"><span class="tag">C</span><span class="tag">Embedded</span><span class="tag">Networking</span></div>
         </article>
 
         <article class="card">
           <h3><a href="https://github.com/EdWrayy/QueryingLanguageInterpreter" target="_blank" rel="noreferrer">PCQL – CSV Query Language</a></h3>
           <div class="meta">Haskell • Parser Generators (Happy/Alex)</div>
-          <p>Functional query language with joins, maps, and Cartesian product over CSVs; custom parser + interpreter.</p>
+          <p>Designed a small query language for CSV files supporting joins, maps, and Cartesian products. Wrote a parser and lexer with Happy/Alex and built a simple interpreter in Haskell.</p>
           <div class="tagrow"><span class="tag">Haskell</span><span class="tag">Compilers</span></div>
         </article>
       </div>
