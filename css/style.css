@@ -66,3 +66,46 @@ html.light:root {
 /* Help native controls/icons choose palettes */
 html.dark { color-scheme: dark; }
 html.light { color-scheme: light; }
+
+/* --- Mobile layout fixes (robust) --- */
+@media (max-width: 640px) {
+  /* Stack header content */
+  header {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  /* Actions: 2-column grid, full width */
+  .actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    width: 100%;
+  }
+  .actions .btn {
+    width: 100%;            /* each button fills its grid cell */
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+  .actions .toggle {
+    grid-column: 1 / -1;    /* Theme on its own row */
+  }
+
+  /* Contact row: same behaviour */
+  #contact .card.row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+  #contact .card.row .btn {
+    width: 100%;
+  }
+  #contact .card.row .muted {
+    grid-column: 1 / -1;
+    margin-top: 2px;
+  }
+}
+
+/* Guard against horizontal overflow */
+header, .actions, .row, .wrap { min-width: 0; }
+.btn { min-width: 0; }
